@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="Login.css">
+    <script>
+        function goToHomePage() {
+            window.location.href = "home.html"; 
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="login-left">
+                <h2>Welcome Back!</h2>
+                <p>To keep connected with us please login with your personal info</p>
+                <button class="btn btn-signin" onclick="goToHomePage()">Sign In</button>
+            </div>
+            <div class="login-right">
+                <h2>Create Account</h2>
+                <p>or use your email for registration:</p>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button class="btn btn-signup" onclick="goToHomePage()">Sign Up</button>
+
+                <div class="social-login">
+                    <button class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i> Sign in with Facebook
+                    </button>
+                    <button class="social-btn google">
+                        <i class="fab fa-google"></i> Sign in with Google
+                    </button>
+                    <button class="social-btn linkedin">
+                        <i class="fab fa-linkedin-in"></i> Sign in with LinkedIn
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

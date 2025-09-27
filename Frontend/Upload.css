@@ -1,0 +1,184 @@
+/* Reset and common styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef5f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2a9d8f; 
+    padding: 20px 40px; 
+    text-align: center;
+    color: white;
+    font-size: 32px; 
+    font-weight: bold;
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: grey;
+    color: black;
+}
+
+nav a.active {
+    background-color: #2a9d8f;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-grow: 1; 
+}
+
+.content {
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #2a9d8f;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Fixes for the Drag and Drop container */
+.camera-container {
+    background-color: #f0f0f0;
+    border: 2px dashed #2a9d8f;
+    padding: 20px;
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    font-size: 18px;
+    border-radius: 8px;
+    position: relative;
+}
+
+#drop-area {
+    border: 2px dashed #00a89e;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block; /* Ensures the drop area does not span the entire width */
+    max-width: 100%; /* Prevents it from stretching too wide */
+    margin-bottom: 20px; /* Space below the drop area */
+}
+
+#drop-area.dragging {
+    background-color: #e0f7f6;
+    border-color: #00796b;
+}
+
+/* Style for the preview image */
+#previewImage {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Button style */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #2a9d8f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Result Section Styles */
+#resultContainer {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hidden */
+}
+
+#resultContainer h2 {
+    font-size: 24px;
+    color: #2a9d8f;
+}
+
+#resultClass, #resultConfidence {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Footer style */
+footer {
+    background-color: #264653;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#wasteInfo {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#wasteInfo h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#wasteInfo p {
+    margin: 5px 0;
+    color: #555;
+}
+

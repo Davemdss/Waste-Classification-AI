@@ -1,0 +1,1 @@
+r'C:\Users\user\OneDrive\Desktop\Artificial Intelligence\working_model\model_with_classes_TransferLearning.pt'
